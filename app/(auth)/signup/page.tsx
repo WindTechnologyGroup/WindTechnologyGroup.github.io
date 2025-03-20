@@ -7,7 +7,7 @@ export default function SignUp() {
   return (
     <>
       <div className="mb-10">
-        <h1 className="text-4xl font-bold">Create your account</h1>
+        <h1 className="text-4xl font-bold">Send us a message</h1>
       </div>
 
       {/* Form */}
@@ -24,7 +24,7 @@ export default function SignUp() {
               id="name"
               className="form-input w-full py-2"
               type="text"
-              placeholder="Corey Barker"
+              placeholder=""
               required
             />
           </div>
@@ -39,11 +39,26 @@ export default function SignUp() {
               id="email"
               className="form-input w-full py-2"
               type="email"
-              placeholder="corybarker@email.com"
+              placeholder=""
               required
             />
           </div>
           <div>
+            <label
+              className="mb-1 block text-sm font-medium text-gray-700"
+              htmlFor="message"
+            >
+              Message
+            </label>
+            <input
+              id="message"
+              className="form-input w-full py-2"
+              type="message"
+              placeholder="We need expertise on creating a digital twin to model..."
+              required
+            />
+          </div>
+          {/* <div>
             <label
               className="mb-1 block text-sm font-medium text-gray-700"
               htmlFor="phone"
@@ -57,8 +72,8 @@ export default function SignUp() {
               placeholder="(+750) 932-8907"
               required
             />
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             <label
               className="mb-1 block text-sm font-medium text-gray-700"
               htmlFor="password"
@@ -73,21 +88,21 @@ export default function SignUp() {
               placeholder="••••••••"
               required
             />
-          </div>
+          </div> */}
         </div>
         <div className="mt-6 space-y-3">
           <button className="btn w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%]">
-            Register
+            Send
           </button>
-          <div className="text-center text-sm italic text-gray-400">Or</div>
-          <button className="btn w-full bg-linear-to-t from-gray-900 to-gray-700 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%]">
+          {/* <div className="text-center text-sm italic text-gray-400">Or</div> */}
+          {/* <button className="btn w-full bg-linear-to-t from-gray-900 to-gray-700 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%]">
             Continue with GitHub
-          </button>
+          </button> */}
         </div>
       </form>
 
       {/* Bottom link */}
-      <div className="mt-6 text-center">
+      {/* <div className="mt-6 text-center">
         <p className="text-sm text-gray-500">
           By signing up, you agree to the{" "}
           <a
@@ -105,7 +120,7 @@ export default function SignUp() {
           </a>
           .
         </p>
-      </div>
+      </div> */}
     </>
   );
 }

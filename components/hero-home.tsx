@@ -113,7 +113,7 @@ export default function HeroHome() {
                 <br />
 
                 <span className="animate-[code-5_10s_infinite] text-gray-200">
-                  wtg.report()
+                  wtg.report
                 </span>
                 <br />
                 <span className="animate-[code-6_10s_infinite]">
